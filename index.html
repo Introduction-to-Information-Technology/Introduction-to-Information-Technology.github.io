@@ -18,6 +18,7 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <link rel="icon" href="images/favicon.png">
 </head>
@@ -102,30 +103,44 @@
 
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                        <img class="card-image" src="images/brandon.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">I like to dab.</p>
-                                            <p class="testimonial-author">Team Member 1 - Designer</p>
+                                            <p class="testimonial-text">"The fire inside me always burns brighter than the fire around me."</p>
+                                            <p class="testimonial-author">Brandon Anderson</p>
+                                            <p class="testimonial-job">IT Consultant</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                        <img class="card-image" src="images/jamie.jpeg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">I like to dab.</p>
-                                            <p class="testimonial-author">Team Member 2 - Developer</p>
+                                            <p class="testimonial-text">"It's all fun and games until someone fails a saving throw."</p>
+                                            <p class="testimonial-author">Jamie Walters</p>
+                                            <p class="testimonial-job">Fullstack Developer</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                        <img class="card-image" src="images/james.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">I like to dab.</p>
-                                            <p class="testimonial-author">Team Member 3 - Dabber</p>
+                                            <p class="testimonial-text">"Turning caffeine into Stack Overflow visits."</p>
+                                            <p class="testimonial-author">James Roberts</p>
+                                            <p class="testimonial-job">Junior Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/ryan.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">"Something, something, something, a placeholder."</p>
+                                            <p class="testimonial-author">Ryan Cetinski</p>
+                                            <p class="testimonial-job">Fullstack Developer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -156,15 +171,19 @@
                 <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab"
-                            aria-controls="tab-1" aria-selected="true">Team Member 1</a>
+                            aria-controls="tab-1" aria-selected="true">Brandon Anderson</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab"
-                            aria-controls="tab-2" aria-selected="false">Team Member 2</a>
+                            aria-controls="tab-2" aria-selected="false">Jamie Walters</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab"
-                            aria-controls="tab-3" aria-selected="false">Team Member 3</a>
+                            aria-controls="tab-3" aria-selected="false">James Roberts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab"
+                            aria-controls="tab-4" aria-selected="false">Ryan Cetinski</a>
                     </li>
                 </ul>
 
@@ -172,7 +191,24 @@
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <div class="container">
                             <div class="row">
-                                <p>Dab</p>
+                                <p><span class="font-weight-bold">Ideal job: </span>IT Consultant</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Student number: </span>s3816471</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Group name: </span>Newb Entity</p>
+                            </div>
+                            <div class="row">
+                                <p>My name is Brandon Anderson. 
+                                    I was born in 1999 on the 7th of June, in a small town called Echuca. 
+                                    I live with my mother Kylie, my sister Bianca, and my partner Kathy. 
+                                    I guess you could say my hobbies involve gaming as that makes up 60% of my life, the rest I am either drawing or focusing on getting my studying done. 
+                                    As a gamer, my main IT interests are learning how all the components in my gaming pc work. 
+                                    As of recently I have had a huge interst in the coding behind making a website. 
+                                    Before starting the bacholer of Information Technology, i had little to no IT experiences. 
+                                    Although i have now some experience in coding after making my own website using GitHub. 
+                                    I have joined together with a group of some amazing guys, and we're making good progress together.</p>
                             </div>
                         </div>
                     </div>
@@ -180,7 +216,24 @@
                     <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                         <div class="container">
                             <div class="row">
-                                <p>Dab</p>
+                                <p><span class="font-weight-bold">Ideal job: </span>Fullstack Developer</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Student number: </span>S3812556</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Group name: </span>Newb Entity</p>
+                            </div>
+                            <div class="row">
+                                <p>Hello, I'm Jamie apart. I live in Tasmania used to be a recovery mechanic (heavy vehicle tow truck driver) in the Aust army, but now drive trucks for Toll. 
+                                    I like to play rugby and video games. 
+                                    I also like to build computers. 
+                                    I have always wanted to study I.T. but I left school before I could get an ATAR score. 
+                                    So, I waited until I was a mature age student to apply. I know how components go together, but I would like to see how they interact with each other. 
+                                    I also have a pretty keen interest in web design and development. 
+                                    The only I.T. experience I have is building computers, making a basic website due to this course and some basics skills in high school. 
+                                    I'm glad I found a good group in this course they have taught me a great deal in a short amount of time and wouldn't be here without them.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -188,14 +241,271 @@
                     <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
                         <div class="container">
                             <div class="row">
-                                <p>Dab</p>
+                                <p><span class="font-weight-bold">Ideal job: </span>Junior Developer</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Student number: </span>s3814353</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Group name: </span>Newb Entity</p>
+                            </div>
+                            <div class="row">
+                                <p>I'm James, a junior JavaScript full stack engineer specializing in UI. 
+                                    My favorite front end framework is React, and I love writing servers in Node with a NoSQL database.
+                                    I have a strong background in blockchain technology, having worked at Exodus, the most popular cryptocurrency wallet in the world,
+                                     and Ambrosus, a smart platform for supply chain tracking. I currently volunteer at a startup called Stage8, a decentralised exchange
+                                     using military-grade secure knox containers.
+                                    After teaching myself to code and working for some amazing companies, I loved it so much I decided to study software development at university. 
+                                    Before I wrote code, I worked in publishing writing and editing books. I also like vaping and anime desu. UwU.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+                                <p><span class="font-weight-bold">Ideal job: </span>Fullstack Developer</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Student number: </span>s3819249</p>
+                            </div>
+                            <div class="row">
+                                <p><span class="font-weight-bold">Group name: </span>Newb Entity</p>
+                            </div>
+                            <div class="row">
+                                <p> I'm Ryan, I was born and raised in Wollongong, Australia. 
+                                    Before studying IT, I studied physics and Japanese, and I play the guitar in my free time. 
+                                    My interest in IT started when I was only four years old. 
+                                    I remember making artwork in MS Paint and playing Minesweeper. 
+                                    Growing up, I would spend a lot of time on a Windows 2000 PC, mainly talking to friends and playing games. 
+                                    Eventually I wanted a more powerful gaming PC, so I got all the parts I would need and assembled the computer with my Dad’s help. 
+                                    I gained a basic knowledge of the components in a PC and their functions, and I was able to swap out parts and perform maintenance by myself.
+                                    I've since gained experience with JavaScript and Object-Oriented programming in Java. </p>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Psychometric Tests</h3>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Meyers Briggs Type Indicator</th>
+                            <th scope="col">VAK Learning Style</th>
+                            <th scope="col">Big 5 Personality Test</th>
+                            <th scope="col">Creativity Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">Brandon</th>
+                            <td>ISFP-t (Adventurer)</td>
+                            <td>Visual Learner (40% preference)</td>
+                            <td></td>
+                            <td>44.92 (complexity preference)</td>
+                            </tr>
+
+                            <tr>
+                            <th scope="row">Jamie</th>
+                            <td>ENFJ-a (Protagonist)</td>
+                            <td>Auditory Learner (40% preference)</td>
+                            <td></td>
+                            <td>64.48 (complexity preference)</td>
+                            </tr>
+
+                            <tr>
+                            <th scope="row">James</th>
+                            <td>ENFP-t (Campaigner)</td>
+                            <td>Kinaesthetic Learner (50% preference)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="font-weight-bold">Neuroticism: </span>36</li>
+                                    <li><span class="font-weight-bold">Extraversion: </span>84</li>
+                                    <li><span class="font-weight-bold">Openness: </span>100</li>
+                                    <li><span class="font-weight-bold">Agreeableness: </span>106</li>
+                                    <li><span class="font-weight-bold">Conscientiousness: </span>72</li>                                  
+                                </ul>                                    
+                            </td>
+                            <td></td>
+                            </tr>
+
+                            <tr>
+                            <th scope="row">Ryan</th>
+                            <td>INFP-a (Mediator)</td>
+                            <td>Visual Learner (40% preference)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="font-weight-bold">Neuroticism: </span>95</li>
+                                    <li><span class="font-weight-bold">Extraversion: </span>77</li>
+                                    <li><span class="font-weight-bold">Openness: </span>99</li>
+                                    <li><span class="font-weight-bold">Agreeableness: </span>90</li>
+                                    <li><span class="font-weight-bold">Conscientiousness: </span>84</li>                                  
+                                </ul>
+                            </td>
+                            <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <p>
+                        We have an extremely balanced team. The first letter in the Meyers Brigg's Personality test is extroversion (E) or introversion (I), which
+                        measures general attitude [1].
+                        Both James and Jamie show a preference for extroversion, and Brandon and Ryan show a preference for introversion.
+                    </p>
+                    <p>
+                        The second letter stands for intuition (N) or sensing (S), which measures perception. 
+                        Once again, we have two intuitive types, James and Jamie; and two 
+                        sensing types, Brandon and Ryan.                        
+                    </p>
+                    <p>
+                        The third letter is thinking (T) or feeling (F), which measures judgement, with the entire team favouring feeling.
+                    </p>
+                    <p>
+                        The fourth letter is judging (J) or perceiving (P), which measures whether someone is more perceptive or more judgemental,
+                         with most of the team favouring perception.
+                    </p>
+                    </br>
+                    <p>We have a variety of learning styles; however, visual learners seem more common. Our team seems to be naturally balanced, and it shows in our team work.</p>
+                    <p>Communication has been frequent and effortless.</p>
+                    </br>
+                    <p>
+                        Both team members who took the Big 5 test scored highly on positive factors compared to the max of 120 per metric. A lower neurotic score, however, does mean
+                        higher neuroticism. Fortunately, the differences between James and Ryan's neuroticism scores should balance out nicely.
+                    </p>
+                    </br>
+                    <p>
+                        Finally, we have two creative types who favour complexity. I cannot think of a better metric for two people who want to make waves in the IT industry.
+                    </p>
+                    </br>
+                    <p>
+                        [1]"Personality Type Explained", Humanmetrics.com, 2019. [Online]. Available: http://www.humanmetrics.com/personality/type. [Accessed: 03- Oct- 2019].
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Ideal Jobs</h3>
+                    <canvas id="myChart"></canvas>
+                    <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        Chart.defaults.global.defaultFontSize = 16;
+                        Chart.defaults.global.elements.point.radius = 10;
+                        Chart.defaults.global.elements.point.radius.hover = 20;
+                        var scatterChart = new Chart(ctx, {
+                            type: 'scatter',
+                            responsive: true,
+                            data: {
+                                datasets: [
+                                    {
+                                    label: 'Brandon',
+                                    data: [{
+                                        x: 'IT Consultant',
+                                        y: 1
+                                    }],
+                                    pointBackgroundColor: "#0074D9",
+                                    backgroundColor: "#0074D9",
+                                    pointHoverRadius: 15                                          
+                                    },
+                                    {
+                                    label: 'Jamie',
+                                    data: [{
+                                        x: 'Fullstack Developer',
+                                        y: 1
+                                    }],
+                                    pointBackgroundColor: "#2ECC40",
+                                    backgroundColor: "#2ECC40",
+                                    pointHoverRadius: 15   
+                                    },
+                                    {
+                                    label: 'James',
+                                    data: [{
+                                        x: 'Junior Developer',
+                                        y: 1
+                                    }],
+                                    pointBackgroundColor: "#FF4136",
+                                    backgroundColor: "#FF4136",
+                                    pointHoverRadius: 15
+                                    },
+                                    {
+                                    label: 'Ryan',
+                                    data: [{
+                                        x: 'Fullstack Developer',
+                                        y: 2
+                                    }],
+                                    pointBackgroundColor: "#B10DC9",
+                                    backgroundColor: "#B10DC9",
+                                    pointHoverRadius: 15   
+                                    }
+                                ]                             
+                            },
+                            options: {
+                                scales: {
+                                    xAxes: [{
+                                        type: 'category',
+                                        labels: ['', 'IT Consultant', 'Fullstack Developer', 'Junior Developer'],
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Job titles'
+                                        }
+                                    }],
+                                    yAxes: [{
+                                    ticks: {
+                                        suggestedMin: 0,
+                                        suggestedMax: 3,
+                                        stepSize: 1,
+                                    },
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Frequency'
+                                    }
+                                }]
+                                },
+                                tooltips: {
+                                    callbacks: {
+                                        label: function(tooltipItem, data) {
+                                            var job = data.datasets[tooltipItem.datasetIndex].data[0].x
+                                            return data.datasets[tooltipItem.datasetIndex].label + ": " + job
+                                        }
+                                                          
+                                    }
+                                }
+                               
+                            }
+                            
+                        });                                     
+                    </script>
+                    <p>The vast majority of our team wants to become developers, with Brandon wanting to become a jack-of-all trades and work as a consultant.
+                    </p>
+                    <p>
+                        The difference between what each developer finds to be an ideal job may lie in short VS long term thinking. A full stack developer is a developer with
+                        such a wealth of knowledge they can build an application's front and backend from scratch, and then deploy it.
+                    </p>
+                    <p>
+                        Striving to be a full stack developer is a longer term goal because of the knowledge required; whereas, a junior developer has graduate-level knowledge.
+                    </p>
+                    <p>
+                        All of the would-be developers on our team are primarily focussed on web development.
+                    </p>
+                    <p>Brandon's ideal job as a consultant is motivated by helping people. A consultant, after all, solves IT problems. His background in design 
+                        will be an invaluable asset to future clients.
+                    </p>
+                    <p>Overall, our team's collective knowledge on web development and design will serve us well on any project. Likewise, th balance of our personality types
+                        is highly conducive to teamwork.
+                    </p>
+                </div>
+            </div>
+
         </div>
+
+
+
+
     </div>
 
 
@@ -323,6 +633,7 @@
     <script src="js/morphext.min.js"></script> 
     <script src="js/validator.min.js"></script> 
     <script src="js/scripts.js"></script> 
+  
 </body>
 
 </html>

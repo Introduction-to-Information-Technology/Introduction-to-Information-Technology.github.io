@@ -47,6 +47,18 @@ html {
 	height: 100%;
 }
 
+.table-dark {
+	background: rgba(52,58,64, 0.2) !important;
+}
+
+h3 {
+	padding-top: 2rem;
+}
+
+canvas {
+	padding-bottom: 0.8rem;
+}
+
 body, p {
 	color: #f1f1f8; 
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
@@ -127,8 +139,12 @@ a.white {
 	font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
 }
 
-.testimonial-author {
-	font: 700 1rem/1.5rem "Montserrat", sans-serif;
+.testimonial-author, .testimonial-job {
+	font: 700 1.1rem/1.5rem "Montserrat", sans-serif;
+}
+
+.testimonial-job {
+	font-size: 0.7rem;
 }
 
 .btn-solid-reg {
