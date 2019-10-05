@@ -558,6 +558,15 @@
                 <div class="col-lg-12">
                     <h2>Industry Data</h2>
                     <div class="p-heading p-large">Exploring demographics of ideal jobs</div>
+                    <p>By plotting data using an overlapping area chart with opacity for each dataset,
+                        we can visually see how skills across jobs overlap while exploring demand.
+                    </p>
+                    <p>Contrasting search results from LinkedIn with data from Burning Glass allowed us to accurately predict job demand.</p>
+                    <p>We used a simple job search to obtain this information from linkedIn</p>
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/jobs.jpg" alt="LinkedIn Job Search">
+                    </div>
+                    
                 </div> 
             </div> 
             <div class="row">
@@ -577,7 +586,7 @@
                                 labels: [ 'Junior Developer', 'Fullstack Developer', 'IT Consultant ' ],
                                 datasets: [{                                    
                                     data: [ 118, 573, 694],
-                                    backgroundColor: "rgba(153,255,51,0.4)"
+                                    backgroundColor: "rgba(64, 224, 238, 0.4)"
                                 }]
                             },
                             options: {
@@ -606,7 +615,7 @@
                             }
                         })
                     </script>
-                    <p>The most in demand job from our team's ideal jobs, as confirmed by linkedIn search results, is an IT consultant, coming in at 694 results from a total of 1386 results (50%).</p>
+                    <p>The most in demand job from our team's ideal jobs, as confirmed by LinkedIn search results, is an IT consultant, coming in at 694 results from a total of 1386 results (50%).</p>
 
                     <p>In second place is full stack developer, coming in at 574 results (41%).</p>
 
@@ -617,6 +626,150 @@
                     <p>This trend is mirrored in the data provided by Burning Glass Technologies in that <i>developer</i> ranks lower than <i>fullstack developer</i>, which ranks lower than <i>senior developer</i>, and at
                         the very top of their chart is a job title <i>solutions architect</i> (Top IT Job Titles March, 2018), which is a fancy term for a consultant. 
                     </p>
+                </br>
+                </br>
+
+                    <h3>Ideal Job IT Skills Ranked by Demand</h3>
+                    <canvas id="mySkillsChart"></canvas>
+                    <script>
+                        var ctx2 = document.getElementById('mySkillsChart').getContext('2d');
+                        Chart.defaults.global.defaultFontSize = 16;
+                        Chart.defaults.global.elements.point.radius = 10;
+                        Chart.defaults.global.elements.point.radius.hover = 20;
+                        Chart.defaults.global.defaultFontColor = 'rgb(241, 241, 248)';
+                        var lineChart = new Chart(ctx2, {
+                            type: 'line',
+                            responsive: true,
+                             data: {
+                                labels: [ 'Business Process', 'Systems Engineering', 'Scrum', 'GIT', 'Website Production', 'Software Engineering', 'Technical Support', 'Business Analysis', 'JavaScript', 'SQL' ],
+                                datasets: [{     
+                                    label: 'Junior Developer',                             
+                                    data: [ , , ,1230, 1366, 1372, , , 2946, ],
+                                    backgroundColor: "rgba(144,238,144,0.4)"
+                                },
+                                {     
+                                    label: 'Fullstack Developer',                             
+                                    data: [, 1037, 1043, 1230, 1366, 1372, , , 2946, 3570],
+                                    backgroundColor: "rgba(147,112,219,0.4)"
+                                },
+                                {     
+                                    label: 'IT Consultant',                             
+                                    data: [1033, 1037, 1043, 1230, 1366, 1372, 1830, 2096, 2946, 3570],
+                                    backgroundColor: "rgba(30,144,255,0.4)"
+                                }]
+                            },
+                            options: {                                                             
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            suggestedMin: 0,
+                                            suggestedMax: 4000
+                                            
+                                            
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Demand'
+                                         }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'IT Skills'
+                                        }
+                                    }]
+                                }
+                            }
+                        })
+                    </script>
+                    <p>The overall trend based on data from Burning Glass Technologies (Top IT Skills March, 2018, 2018) is that the skillset of a junior developer isn't
+                        as in demand as that of a fullstack developer or a consultant.
+                    </p>
+                    <p>
+                        Interestingly, an IT Consultant and full stack developer's skills overlap very closely; however, a consultant requires additional generalized IT skills like technical support that a developer wouldn't necessarily need to provide. 
+                    </p>
+                    <p>Java, SPA, and Business Management are the three highest IT skills not in our required skills. 
+                        Note: We want to be web developers, and Java isn't commonly used compared to other languages. 
+                        An IT Consultant may have use for Java, however.
+                        Likewise, a Single Page Application isn't specific to web development, so I chose not to include it.                    
+                    </p>
+
+                  
+                    </br>
+                    </br>
+
+                    <h3>Ideal Job General Skills Ranked by Demand</h3>
+                    <canvas id="myGeneralChart"></canvas>
+                    <script>
+                        var ctx2 = document.getElementById('myGeneralChart').getContext('2d');
+                        Chart.defaults.global.defaultFontSize = 16;
+                        Chart.defaults.global.elements.point.radius = 10;
+                        Chart.defaults.global.elements.point.radius.hover = 20;
+                        Chart.defaults.global.defaultFontColor = 'rgb(241, 241, 248)';
+                        var lineChart = new Chart(ctx2, {
+                            type: 'line',
+                            responsive: true,
+                            data: {
+                                labels: ['Decision Making', 'Self Starter', 'Management', 'Meeting Deadlines', 'Quality Assurance', 'Research', 'Troubleshooting', 'Team Work', 'Report Writing', 'Communication' ],
+                                datasets: [{     
+                                    label: 'Junior Developer',                             
+                                    data: [ , 1984, ,3346, , , 11471, 14364, ,44367],
+                                    backgroundColor: "rgba(144,238,144,0.4)"
+                                },
+                                {     
+                                    label: 'Fullstack Developer',                             
+                                    data: [1850, 1984, ,3346, 4444, 7227, 11471, 14364, ,44367 ],
+                                    backgroundColor: "rgba(147,112,219,0.4)"
+                                },
+                                {     
+                                    label: 'IT Consultant',                             
+                                    data: [1850, 1984, 2906, 3346, 4444, 7227, 11471, 14364, 15590, 44367 ],
+                                    backgroundColor: "rgba(30,144,255,0.4)"
+                                }]
+                            },
+                            options: {                                                             
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            suggestedMin: 0,
+                                            suggestedMax: 48000
+                                            
+                                            
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Demand'
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'General Skills'
+                                        }
+                                    }]
+                                }
+                            }
+                        })
+                    </script>
+                    <p>The overall trend based on data from Burning Glass Technologies (Top Generic Skills March, 2018, 2018) is that all three jobs lean heavily on the most in demand skills like troubleshooting, communication, and team work.</p>
+                    <p>Regarding the writing skill, I chose to rename it report writing because <i>writing</i> is too vague to draw a meaningful conclusion.</p>
+                    <p>Yes, developers need to write documentation, but generalised writing skills in the sense of communication isn't as necessary for a developer as it would be a journalist.</p>
+                    <p>The ability for a consultant to write a report is likely extremely valuable.</p>
+                    <p>The same trends here for the general skills as those in the IT skills can also be seen with the overlap between the fullstack developer and the consultant.</p>
+                    <p>However, on this chart, the junior developer needs much more general skills than they do IT skills.</p>
+                    <p>The three highest ranked general skills not in our required skills are problem solving, organisation, and planning.
+                        In making the decision not to include these skills, I decided that organisation is more important for leadership roles than individual developers/consultants working under a project lead.
+                        I also didn't include problem solving because it seemed redundant as troubleshooting is already a required skill. Likewise, planning is another aspect that would better suit a leadership role.
+                        Although an IT Consultant could fill the role of leadership, it would be more likely for a consultant to work under a CTO to solve a very specific problem or under a technical lead.
+                    </p>
+                    </br>
+                    </br>
+
+                    <p>Exploring these trends only supported our original opinions about our ideal jobs.</p>
+                    <p>The demand for a junior developer is paramount to the amount of time it takes to become a junior developer.</p>
+                    <p>In contrast, there is a higher time investment in becoming a consultant or a fullstack developer, and the demand reflects this.</p>
+                    <p>Our opinions remain unchanged regarding our ideal jobs, but we now have the data to backup said opinions.</p>
+
                 </div>
             </div>
         </div>
@@ -733,6 +886,20 @@
                     [ebook] Burning Glass Technologies. 
                     Available at: https://rmit.instructure.com/courses/56532/files/8618141/download?wrap=1 
                     [Accessed 5 Oct. 2019].</p>
+
+                    <p>
+                        Top IT Skills March, 2018. (2018).
+                        [ebook] Burning Glass Technologies.
+                        Available at: https://rmit.instructure.com/courses/56532/files/8618076/download?wrap=1 
+                        [Accessed 5 Oct. 2019].
+                    </p>
+
+                    <p>
+                        Top Generic Skills March, 2018. (2018). 
+                        [ebook] Burning Glass Technologies. 
+                        Available at: https://rmit.instructure.com/courses/56532/files/8618140/download?wrap=1 
+                        [Accessed 5 Oct. 2019].
+                    </p>
                 </div>
             </div> 
         </div> 
