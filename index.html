@@ -577,7 +577,7 @@
                         var ctx2 = document.getElementById('myDemandChart').getContext('2d');
                         Chart.defaults.global.defaultFontSize = 16;
                         Chart.defaults.global.elements.point.radius = 10;
-                        Chart.defaults.global.elements.point.radius.hover = 20;
+                       
                         Chart.defaults.global.defaultFontColor = 'rgb(241, 241, 248)';
                         var lineChart = new Chart(ctx2, {
                             type: 'line',
@@ -586,7 +586,8 @@
                                 labels: [ 'Junior Developer', 'Fullstack Developer', 'IT Consultant ' ],
                                 datasets: [{                                    
                                     data: [ 118, 573, 694],
-                                    backgroundColor: "rgba(64, 224, 238, 0.4)"
+                                    backgroundColor: "rgba(64, 224, 238, 0.4)",
+                                    pointHoverRadius: 15
                                 }]
                             },
                             options: {
@@ -635,7 +636,6 @@
                         var ctx2 = document.getElementById('mySkillsChart').getContext('2d');
                         Chart.defaults.global.defaultFontSize = 16;
                         Chart.defaults.global.elements.point.radius = 10;
-                        Chart.defaults.global.elements.point.radius.hover = 20;
                         Chart.defaults.global.defaultFontColor = 'rgb(241, 241, 248)';
                         var lineChart = new Chart(ctx2, {
                             type: 'line',
@@ -645,17 +645,20 @@
                                 datasets: [{     
                                     label: 'Junior Developer',                             
                                     data: [ , , ,1230, 1366, 1372, , , 2946, ],
-                                    backgroundColor: "rgba(144,238,144,0.4)"
+                                    backgroundColor: "rgba(144,238,144,0.4)",
+                                    pointHoverRadius: 15
                                 },
                                 {     
                                     label: 'Fullstack Developer',                             
                                     data: [, 1037, 1043, 1230, 1366, 1372, , , 2946, 3570],
-                                    backgroundColor: "rgba(147,112,219,0.4)"
+                                    backgroundColor: "rgba(147,112,219,0.4)",
+                                    pointHoverRadius: 15
                                 },
                                 {     
                                     label: 'IT Consultant',                             
                                     data: [1033, 1037, 1043, 1230, 1366, 1372, 1830, 2096, 2946, 3570],
-                                    backgroundColor: "rgba(30,144,255,0.4)"
+                                    backgroundColor: "rgba(30,144,255,0.4)",
+                                    pointHoverRadius: 15
                                 }]
                             },
                             options: {                                                             
@@ -704,7 +707,6 @@
                         var ctx2 = document.getElementById('myGeneralChart').getContext('2d');
                         Chart.defaults.global.defaultFontSize = 16;
                         Chart.defaults.global.elements.point.radius = 10;
-                        Chart.defaults.global.elements.point.radius.hover = 20;
                         Chart.defaults.global.defaultFontColor = 'rgb(241, 241, 248)';
                         var lineChart = new Chart(ctx2, {
                             type: 'line',
@@ -714,17 +716,20 @@
                                 datasets: [{     
                                     label: 'Junior Developer',                             
                                     data: [ , 1984, ,3346, , , 11471, 14364, ,44367],
-                                    backgroundColor: "rgba(144,238,144,0.4)"
+                                    backgroundColor: "rgba(144,238,144,0.4)",
+                                    pointHoverRadius: 15
                                 },
                                 {     
                                     label: 'Fullstack Developer',                             
                                     data: [1850, 1984, ,3346, 4444, 7227, 11471, 14364, ,44367 ],
-                                    backgroundColor: "rgba(147,112,219,0.4)"
+                                    backgroundColor: "rgba(147,112,219,0.4)",
+                                    pointHoverRadius: 15
                                 },
                                 {     
                                     label: 'IT Consultant',                             
                                     data: [1850, 1984, 2906, 3346, 4444, 7227, 11471, 14364, 15590, 44367 ],
-                                    backgroundColor: "rgba(30,144,255,0.4)"
+                                    backgroundColor: "rgba(30,144,255,0.4)",
+                                    pointHoverRadius: 15
                                 }]
                             },
                             options: {                                                             
@@ -812,7 +817,7 @@
                               Sam’s most challenging thing is when a client sees the finished product then sees something that they might not like and wants his to change the website to please the client’s needs.
                               He says, “you really need to get it right the first time”.</P>
 
-                              <p><ul style="list-style: none">
+                              <p><ul class="indentIt" style="list-style: none">
                                 <li>Some examples of Sam’s work are listed below:</li>
                                 <li><a href="https://www.rbclaunceston.com">www.rbclaunceston.com</a></li>
                                 <li><a href="https://www.buckbymotors.com.au">www.buckymotors.com.au</a></li>
