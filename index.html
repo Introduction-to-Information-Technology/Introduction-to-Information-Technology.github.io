@@ -62,6 +62,9 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#reflection">Group Reflection</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#references">References</a>
+                </li>
             </ul>
 
         </div>
@@ -554,12 +557,66 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Industry Data</h2>
-                    <div class="p-heading p-large">Burning glass data</div>
-                </div>
-            </div>
+                    <div class="p-heading p-large">Exploring demographics of ideal jobs</div>
+                </div> 
+            </div> 
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Writing about stuff</p>
+                    <h3>Search Results by Keyword LinkedIn</h3>
+                    <canvas id="myDemandChart"></canvas>
+                    <script>
+                        var ctx2 = document.getElementById('myDemandChart').getContext('2d');
+                        Chart.defaults.global.defaultFontSize = 16;
+                        Chart.defaults.global.elements.point.radius = 10;
+                        Chart.defaults.global.elements.point.radius.hover = 20;
+                        Chart.defaults.global.defaultFontColor = 'rgb(241, 241, 248)';
+                        var lineChart = new Chart(ctx2, {
+                            type: 'line',
+                            responsive: true,
+                             data: {
+                                labels: [ 'Junior Developer', 'Fullstack Developer', 'IT Consultant ' ],
+                                datasets: [{                                    
+                                    data: [ 118, 573, 694],
+                                    backgroundColor: "rgba(153,255,51,0.4)"
+                                }]
+                            },
+                            options: {
+                                legend: {
+                                    display: false
+                                },                               
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            suggestedMin: 0
+                                            
+                                            
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Demand'
+                                         }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Jobs'
+                                        }
+                                    }]
+                                }
+                            }
+                        })
+                    </script>
+                    <p>The most in demand job from our team's ideal jobs, as confirmed by linkedIn search results, is an IT consultant, coming in at 694 results from a total of 1386 results (50%).</p>
+
+                    <p>In second place is full stack developer, coming in at 574 results (41%).</p>
+
+                    <p>In last place is junior developer, coming in at 118 results (8%).</p>
+
+                    <p>This supports the idea that the demand for senior developers far exceeds the demand for junior developers; likewise, the jack-of-all trades consultant's skillset isn't limited to working in software alone, so demand is high for good reason.</p>
+
+                    <p>This trend is mirrored in the data provided by Burning Glass Technologies in that <i>developer</i> ranks lower than <i>fullstack developer</i>, which ranks lower than <i>senior developer</i>, and at
+                        the very top of their chart is a job title <i>solutions architect</i> (Top IT Job Titles March, 2018), which is a fancy term for a consultant. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -661,6 +718,25 @@
             </div>
         </div>
     </div>
+
+    <div id="references" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>References</h2>
+                    <div class="p-heading p-large">Our sources</div>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Top IT Job Titles March. (2018). 
+                    [ebook] Burning Glass Technologies. 
+                    Available at: https://rmit.instructure.com/courses/56532/files/8618141/download?wrap=1 
+                    [Accessed 5 Oct. 2019].</p>
+                </div>
+            </div> 
+        </div> 
+    </div> 
 
 
     <div class="counter">
